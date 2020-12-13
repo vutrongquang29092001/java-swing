@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Repository/Repositoryauthor.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Helper/DatabaseUtil.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/DTO/BookAuthor.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Controller/BookController.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Entity/Book.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Repository/RepositoryBook.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/View/View.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/java_spring/Java_Spring.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Entity/Author.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Controller/AuthorController.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Java_Spring/src/Service/Service.java</file>
+        </group>
+    </open-files>
+</project-private>
