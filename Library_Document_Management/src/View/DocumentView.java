@@ -5,8 +5,9 @@
  */
 package View;
 
-import Controller.BookController;
+import Controller.DocumentController;
 import Model.DTO.BookDTO;
+import Model.DTO.DocumentDTO;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,10 +15,10 @@ import java.util.Scanner;
  *
  * @author vutro
  */
-public class View {
+public class DocumentView {
 
-    BookController Book = BookController.GetInstance();
     Scanner sc = new Scanner(System.in);
+    DocumentController Document = DocumentController.GetInstance();
 
     public void View() {
 
@@ -32,36 +33,37 @@ public class View {
             String input = sc.nextLine();
             switch (input) {
                 case "1":
-                    ArrayList<BookDTO> getallbook = Book.getAllBook();
-                    for (int i = 0; i < getallbook.size(); i++) {
-                        System.out.println(getallbook.get(i).toString());
+                    ArrayList< DocumentDTO> getallDocument = Document.getAllDocument();
+                    for (int i = 0; i < getallDocument.size(); i++) {
+                        System.out.println(getallDocument.get(i).toString());
                     }
                     break;
                 case "2":
                     System.out.println("nhap ten ");
                     String name = sc.nextLine();
-                    System.out.println(Book.getBookByName(name).toString());
+                    System.out.println(Document.getDocumentByName(name).toString());
                     break;
                 case "3":
-                    BookDTO book = new BookDTO();
+                    DocumentDTO document = new DocumentDTO();
                     System.out.println("nhap id ");
-                    book.setId(sc.nextLine());
+                    document.setId(sc.nextLine());
                     System.out.println("nhap ten sach");
-                    book.setName(sc.nextLine());
+                    document.setName(sc.nextLine());
                     System.out.println("nhap gia");
-                    book.setPrice(sc.nextFloat());
+                    document.setPrice(sc.nextFloat());
                     System.out.println("nhap author");
                     sc.nextLine();
-                    book.setAuthor(sc.nextLine());
+                    document.setAuthor(sc.nextLine());
                     System.out.println("nhap Producer");
-                    book.setProducer(sc.nextLine());
+                    document.setProducer(sc.nextLine());
                     System.out.println("nhap Publishing_company");
-                    book.setPublishing_company(sc.nextLine());
+                    document.setPublishing_company(sc.nextLine());
                     System.out.println("nhap Type");
-                    book.setType(sc.nextLine());
+                    document.setType(sc.nextLine());
                     System.out.println("nhap Issue_number");
-                    book.setIssue_number(sc.nextInt());
-                    response = Book.addBook(book);
+                    document.setIssue_number(sc.nextInt());
+                    sc.nextLine();
+                    response = Document.addDocument(document);
                     if (response) {
                         System.out.println("success");
                     } else {
@@ -69,25 +71,26 @@ public class View {
                     }
                     break;
                 case "4":
-                   BookDTO book1 = new BookDTO();
+                    DocumentDTO document1 = new BookDTO();
                     System.out.println("nhap id ");
-                    book1.setId(sc.nextLine());
+                    document1.setId(sc.nextLine());
                     System.out.println("nhap ten sach");
-                    book1.setName(sc.nextLine());
+                    document1.setName(sc.nextLine());
                     System.out.println("nhap gia");
-                    book1.setPrice(sc.nextFloat());
+                    document1.setPrice(sc.nextFloat());
                     System.out.println("nhap author");
                     sc.nextLine();
-                    book1.setAuthor(sc.nextLine());
+                    document1.setAuthor(sc.nextLine());
                     System.out.println("nhap Producer");
-                    book1.setProducer(sc.nextLine());
+                    document1.setProducer(sc.nextLine());
                     System.out.println("nhap Publishing_company");
-                    book1.setPublishing_company(sc.nextLine());
+                    document1.setPublishing_company(sc.nextLine());
                     System.out.println("nhap Type");
-                    book1.setType(sc.nextLine());
+                    document1.setType(sc.nextLine());
                     System.out.println("nhap Issue_number");
-                    book1.setIssue_number(sc.nextInt());
-                    response = Book.updateBook(book1);
+                    document1.setIssue_number(sc.nextInt());
+                    sc.nextLine();
+                    response = Document.updateDocument(document1);
                     if (response) {
                         System.out.println("success");
                     } else {
@@ -97,20 +100,21 @@ public class View {
                 case "5":
                     System.out.println("nhap ten sach muon xoa");
                     String name1 = sc.nextLine();
-                    response = Book.deleteBook(name1);
+                    response = Document.deleteDocument(name1);
                     if (response) {
                         System.out.println("success");
                     } else {
                         System.out.println("fail");
                     }
                     break;
-                default: System.out.println(" chan roi a ");
+                default:
+                    System.out.println(" chan roi a ");
                     System.out.println("Y/N");
                     String St = sc.nextLine();
-                    if(St.equals("Y")){
-                        return ;
-                    }else{
-                        
+                    if (St.equals("Y")) {
+                        return;
+                    } else {
+
                     }
             }
         }

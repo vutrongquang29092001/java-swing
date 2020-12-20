@@ -5,9 +5,8 @@
  */
 package View;
 
-import Controller.NewPaperController;
-
-import Model.DTO.NewPaperDTO;
+import Controller.MagazinesController;
+import Model.DTO.MagazinesDTO;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -15,61 +14,61 @@ import java.util.Scanner;
  *
  * @author vutro
  */
-public class NewPaperView {
+public class MagazinesView {
 
-    NewPaperController NewPaper = NewPaperController.GetInstance();
+    MagazinesController Magazines = MagazinesController.GetInstance();
     Scanner sc = new Scanner(System.in);
 
     public void View() {
 
         while (true) {
             boolean response;
-            System.out.println("1, getAllNewPaper");
-            System.out.println("2, getNewPaperByName");
-            System.out.println("3, addNewPaper");
-            System.out.println("4, updateNewPaper");
-            System.out.println("5, deleteNewPaper");
+            System.out.println("1, getAllMagazines");
+            System.out.println("2, getMagazinesByName");
+            System.out.println("3, addMagazines");
+            System.out.println("4, updateMagazines");
+            System.out.println("5, deleteMagazines");
             System.out.println("nhap lua chon ");
             String input = sc.nextLine();
             switch (input) {
                 case "1":
-                    ArrayList<NewPaperDTO> getallNewPaper = NewPaper.getAllNewPaper();
-                    for (int i = 0; i < getallNewPaper.size(); i++) {
-                        System.out.println(getallNewPaper.get(i).toString());
+                    ArrayList<MagazinesDTO> getallbook = Magazines.getAllMagazines();
+                    for (int i = 0; i < getallbook.size(); i++) {
+                        System.out.println(getallbook.get(i).toString());
                     }
                     break;
                 case "2":
                     System.out.println("nhap ten ");
                     String name = sc.nextLine();
-                    NewPaperDTO newPaper1 = new NewPaperDTO();
-                    newPaper1 = NewPaper.getNewPaperByName(name);
-                    if(newPaper1 != null){
-                          System.out.println(newPaper1.toString());
+                    MagazinesDTO magazines1 = new MagazinesDTO();
+                    magazines1 = Magazines.getMagazinesByName(name);
+                    if (magazines1 != null) {
+                        System.out.println(magazines1.toString());
                     }else{
-                        System.out.println("khong co sach nay");
+                        System.out.println("ko co sach nay");
                     }
-                  
+
                     break;
                 case "3":
-                    NewPaperDTO newPaper = new NewPaperDTO();
+                    MagazinesDTO magazines = new MagazinesDTO();
                     System.out.println("nhap id ");
-                    newPaper.setId(sc.nextLine());
+                    magazines.setId(sc.nextLine());
                     System.out.println("nhap ten sach");
-                    newPaper.setName(sc.nextLine());
+                    magazines.setName(sc.nextLine());
                     System.out.println("nhap gia");
-                    newPaper.setPrice(sc.nextFloat());
+                    magazines.setPrice(sc.nextFloat());
                     System.out.println("nhap author");
                     sc.nextLine();
-                    newPaper.setAuthor(sc.nextLine());
+                    magazines.setAuthor(sc.nextLine());
                     System.out.println("nhap Producer");
-                    newPaper.setProducer(sc.nextLine());
+                    magazines.setProducer(sc.nextLine());
                     System.out.println("nhap Publishing_company");
-                    newPaper.setPublishing_company(sc.nextLine());
+                    magazines.setPublishing_company(sc.nextLine());
                     System.out.println("nhap Type");
-                    newPaper.setType(sc.nextLine());
+                    magazines.setType(sc.nextLine());
                     System.out.println("nhap Issue_number");
-                    newPaper.setIssue_number(sc.nextInt());sc.nextLine();
-                    response = NewPaper.addNewPaper(newPaper);
+                    magazines.setIssue_number(sc.nextInt());sc.nextLine();
+                    response = Magazines.addMagazines(magazines);
                     if (response) {
                         System.out.println("success");
                     } else {
@@ -77,26 +76,25 @@ public class NewPaperView {
                     }
                     break;
                 case "4":
-                    NewPaperDTO NewPaper1 = new NewPaperDTO();
+                    MagazinesDTO Magazines1 = new MagazinesDTO();
                     System.out.println("nhap id ");
-                    NewPaper1.setId(sc.nextLine());
+                    Magazines1.setId(sc.nextLine());
                     System.out.println("nhap ten sach");
-                    NewPaper1.setName(sc.nextLine());
+                    Magazines1.setName(sc.nextLine());
                     System.out.println("nhap gia");
-                    NewPaper1.setPrice(sc.nextFloat());
+                    Magazines1.setPrice(sc.nextFloat());
                     System.out.println("nhap author");
                     sc.nextLine();
-                    NewPaper1.setAuthor(sc.nextLine());
+                    Magazines1.setAuthor(sc.nextLine());
                     System.out.println("nhap Producer");
-                    NewPaper1.setProducer(sc.nextLine());
+                    Magazines1.setProducer(sc.nextLine());
                     System.out.println("nhap Publishing_company");
-                    NewPaper1.setPublishing_company(sc.nextLine());
+                    Magazines1.setPublishing_company(sc.nextLine());
                     System.out.println("nhap Type");
-                    NewPaper1.setType(sc.nextLine());
+                    Magazines1.setType(sc.nextLine());
                     System.out.println("nhap Issue_number");
-                    NewPaper1.setIssue_number(sc.nextInt());
-                    sc.nextLine();
-                    response = NewPaper.updateNewPaper(NewPaper1);
+                    Magazines1.setIssue_number(sc.nextInt());sc.nextLine();
+                    response = Magazines.updateMagazines(Magazines1);
                     if (response) {
                         System.out.println("success");
                     } else {
@@ -106,7 +104,7 @@ public class NewPaperView {
                 case "5":
                     System.out.println("nhap ten sach muon xoa");
                     String name1 = sc.nextLine();
-                    response = NewPaper.deleteNewPaper(name1);
+                    response = Magazines.deleteMagazines(name1);
                     if (response) {
                         System.out.println("success");
                     } else {

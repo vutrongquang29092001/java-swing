@@ -2,6 +2,27 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/library_document_management/Library_Document_Management.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/NewJFrame.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Model/DTO/MagazinesDTO.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/BookView.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Model/DAO/NewPaperDAO.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Model/DAO/MagazinesDAO.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/NewPaperView.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Controller/DocumentController.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/DatabaseUtil/DatabaseUtil.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/ViewjFmain.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Controller/MagazinesController.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Model/DTO/BookDTO.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Model/DTO/NewPaperDTO.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/DocumentView.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Model/DAO/DocumentDAO.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/MagazinesView.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/JFBook.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/NewClass.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/View/NewJPanel.java</file>
+            <file>file:/C:/Users/vutro/OneDrive/Documents/NetBeansProjects/Library_Document_Management/src/Model/DTO/DocumentDTO.java</file>
+        </group>
     </open-files>
 </project-private>

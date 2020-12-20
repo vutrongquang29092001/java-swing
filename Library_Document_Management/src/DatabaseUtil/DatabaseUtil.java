@@ -54,7 +54,7 @@ public class DatabaseUtil {
     public boolean updateQuery(String query){
         try {
             Statement stmt = connection.createStatement();
-            System.out.println("Excuting query: " + query);
+        System.out.println("Excuting query: " + query);
             stmt.execute(query);
             return true;
         } catch (SQLException e) {

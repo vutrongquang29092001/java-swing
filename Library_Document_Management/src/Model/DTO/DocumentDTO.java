@@ -9,7 +9,7 @@ package Model.DTO;
  *
  * @author vutro
  */
-public abstract class DocumentDTO {
+public  class DocumentDTO {
 
     private String id;
     private String name;
@@ -21,6 +21,7 @@ public abstract class DocumentDTO {
     private float price;
 
     public DocumentDTO() {
+        
     }
 
     public DocumentDTO(String id, String name, String author, String producer,String Type, String publishing_company, int issue_number, float price) {
