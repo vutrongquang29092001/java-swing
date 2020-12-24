@@ -496,8 +496,26 @@ public class NewJFrame extends javax.swing.JFrame {
         nextBook = new javax.swing.JButton();
         BackBook = new javax.swing.JButton();
         document = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        GAB1 = new javax.swing.JButton();
+        SB1 = new javax.swing.JButton();
+        AB1 = new javax.swing.JButton();
+        DB1 = new javax.swing.JButton();
+        UB1 = new javax.swing.JButton();
+        nextBook1 = new javax.swing.JButton();
+        BackBook1 = new javax.swing.JButton();
         magazines = new javax.swing.JPanel();
+        magazine = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jPanel13 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
         newPaper = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         Document = new javax.swing.JButton();
@@ -1057,40 +1075,152 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel4.add(book, "card5");
 
         document.setBackground(new java.awt.Color(204, 255, 204));
+        document.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("jButton1");
+        jPanel8.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout documentLayout = new javax.swing.GroupLayout(document);
-        document.setLayout(documentLayout);
-        documentLayout.setHorizontalGroup(
-            documentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(documentLayout.createSequentialGroup()
-                .addGap(102, 102, 102)
-                .addComponent(jButton1)
-                .addContainerGap(1025, Short.MAX_VALUE))
+        jPanel9.setLayout(new java.awt.CardLayout());
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1200, Short.MAX_VALUE)
         );
-        documentLayout.setVerticalGroup(
-            documentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(documentLayout.createSequentialGroup()
-                .addGap(97, 97, 97)
-                .addComponent(jButton1)
-                .addContainerGap(418, Short.MAX_VALUE))
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 540, Short.MAX_VALUE)
         );
+
+        jPanel9.add(jPanel11, "card3");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1200, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 540, Short.MAX_VALUE)
+        );
+
+        jPanel9.add(jPanel10, "card2");
+
+        jPanel8.add(jPanel9, "card2");
+
+        document.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 250, -1, -1));
+
+        jPanel7.setBackground(new java.awt.Color(51, 51, 51));
+
+        GAB1.setText("Get All Doc");
+        GAB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GAB1ActionPerformed(evt);
+            }
+        });
+
+        SB1.setText("Search");
+
+        AB1.setText("Add");
+
+        DB1.setText("Delete");
+
+        UB1.setText("Update");
+
+        nextBook1.setText("Next");
+
+        BackBook1.setText("Back");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(AB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(SB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(GAB1, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+            .addComponent(UB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(nextBook1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(BackBook1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(92, Short.MAX_VALUE)
+                .addComponent(GAB1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(SB1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(AB1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(DB1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(UB1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(nextBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BackBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(81, 81, 81))
+        );
+
+        document.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 120, 540));
 
         jPanel4.add(document, "card3");
 
         magazines.setBackground(new java.awt.Color(204, 204, 204));
+        magazines.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout magazinesLayout = new javax.swing.GroupLayout(magazines);
-        magazines.setLayout(magazinesLayout);
-        magazinesLayout.setHorizontalGroup(
-            magazinesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1200, Short.MAX_VALUE)
+        magazine.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel12.setLayout(new java.awt.CardLayout());
+
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel12.add(jButton1, "card2");
+
+        jButton4.setText("jButton4");
+        jPanel12.add(jButton4, "card3");
+
+        jButton5.setText("jButton5");
+        jPanel12.add(jButton5, "card4");
+
+        magazine.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 540));
+
+        jPanel13.setBackground(new java.awt.Color(102, 255, 102));
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
         );
-        magazinesLayout.setVerticalGroup(
-            magazinesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 540, Short.MAX_VALUE)
         );
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(355, 355, 355)
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(265, Short.MAX_VALUE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        magazine.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 0, 1050, 540));
+
+        magazines.add(magazine, "card2");
 
         jPanel4.add(magazines, "card4");
 
@@ -1340,6 +1470,14 @@ public class NewJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTable2MouseReleased
 
+    private void GAB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GAB1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GAB1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1382,17 +1520,23 @@ public class NewJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AB;
+    private javax.swing.JButton AB1;
     private javax.swing.JButton BackBook;
+    private javax.swing.JButton BackBook1;
     private javax.swing.JButton Book;
     private javax.swing.JButton Close;
     private javax.swing.JButton DB;
+    private javax.swing.JButton DB1;
     private javax.swing.JButton Document;
     private javax.swing.JButton GAB;
+    private javax.swing.JButton GAB1;
     private javax.swing.JButton Magazines;
     private javax.swing.JButton NewPaper;
     private javax.swing.JButton Next;
     private javax.swing.JButton SB;
+    private javax.swing.JButton SB1;
     private javax.swing.JButton UB;
+    private javax.swing.JButton UB1;
     private javax.swing.JPanel addBook;
     private javax.swing.JButton applyadd;
     private javax.swing.JLabel authorBookjL;
@@ -1416,6 +1560,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -1423,11 +1569,19 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
@@ -1449,11 +1603,13 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JPanel magazine;
     private javax.swing.JPanel magazines;
     private javax.swing.JLabel nameBookjL;
     private javax.swing.JLabel nameBookjL2;
     private javax.swing.JPanel newPaper;
     private javax.swing.JButton nextBook;
+    private javax.swing.JButton nextBook1;
     private javax.swing.JLabel pCBookjL;
     private javax.swing.JLabel pCBookjL2;
     private javax.swing.JLabel priceBookjL;
