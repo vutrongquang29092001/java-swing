@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  * @author vutro
  */
 public class DatabaseUtil {
-    Connection connection = null;
+   private Connection connection = null;
     
     public DatabaseUtil(){
         try {

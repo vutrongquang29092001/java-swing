@@ -91,16 +91,18 @@ public class BookDAO {
                 + "','" + document.getPublishing_company()
                 + "'," + document.getIssue_number()
                 + "," + document.getPrice()
-                + ") ;";
+                + ") WHERE NOT EXISTS (SELECT id FROM document WHERE id = '"+document.getId()+"');";
         System.out.println(sql);
         try {
             if (dbUtil.updateQuery(sql)) {
                 System.out.println("success");
+                  return true;
             } else {
                 System.out.println("fail");
+                return false;
             }
 
-            return true;
+          
         } catch (Exception e) {
             System.out.println(e);
             return false;
